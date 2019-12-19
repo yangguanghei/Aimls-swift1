@@ -15,6 +15,7 @@
 		A23EE8CD2396771600352F85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A23EE8CB2396771600352F85 /* LaunchScreen.storyboard */; };
 		A23EE8D82396771600352F85 /* Aimls_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EE8D72396771600352F85 /* Aimls_swiftTests.swift */; };
 		A23EE8E32396771600352F85 /* Aimls_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EE8E22396771600352F85 /* Aimls_swiftUITests.swift */; };
+		A2DAB0762399FF40000BA529 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DAB0752399FF40000BA529 /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		A23EE8DE2396771600352F85 /* Aimls-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aimls-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23EE8E22396771600352F85 /* Aimls_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aimls_swiftUITests.swift; sourceTree = "<group>"; };
 		A23EE8E42396771600352F85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2DAB0732399FF40000BA529 /* Aimls-swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aimls-swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2DAB0742399FF40000BA529 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		A2DAB0752399FF40000BA529 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,13 @@
 				A23EE8C0239676FF00352F85 /* AppDelegate.swift */,
 				A23EE8C2239676FF00352F85 /* SceneDelegate.swift */,
 				A23EE8C4239676FF00352F85 /* ViewController.swift */,
+				A2DAB0742399FF40000BA529 /* NextViewController.h */,
+				A2DAB0752399FF40000BA529 /* NextViewController.m */,
 				A23EE8C6239676FF00352F85 /* Main.storyboard */,
 				A23EE8C92396771600352F85 /* Assets.xcassets */,
 				A23EE8CB2396771600352F85 /* LaunchScreen.storyboard */,
 				A23EE8CE2396771600352F85 /* Info.plist */,
+				A2DAB0732399FF40000BA529 /* Aimls-swift-Bridging-Header.h */,
 			);
 			path = "Aimls-swift";
 			sourceTree = "<group>";
@@ -196,6 +203,7 @@
 				TargetAttributes = {
 					A23EE8BC239676FF00352F85 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 					A23EE8D22396771600352F85 = {
 						CreatedOnToolsVersion = 11.2;
@@ -260,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23EE8C5239676FF00352F85 /* ViewController.swift in Sources */,
+				A2DAB0762399FF40000BA529 /* NextViewController.m in Sources */,
 				A23EE8C1239676FF00352F85 /* AppDelegate.swift in Sources */,
 				A23EE8C3239676FF00352F85 /* SceneDelegate.swift in Sources */,
 			);
@@ -434,15 +443,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8ETH5Y5NB;
 				INFOPLIST_FILE = "Aimls-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LS.Aimls-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aimls-swift/Aimls-swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,15 +465,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8ETH5Y5NB;
 				INFOPLIST_FILE = "Aimls-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "LS.Aimls-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Aimls-swift/Aimls-swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
